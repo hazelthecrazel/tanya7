@@ -1,0 +1,402 @@
+<style>
+body{
+background-color:#9CD0D6;
+background-image: url('') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+}
+
+::-webkit-scrollbar {width: 3px; height: 3px;}
+::-webkit-scrollbar-track {background: none;}
+::-webkit-scrollbar-thumb {background: #B18989;}
+
+#ribbon1 {
+position:absolute;
+background-color:#DC9C98;
+border-top:3px dashed #ffffff;
+border-bottom:5px solid #E3BBBB;
+height:5%;
+width:100%;
+top:47.5%;
+left:0%;
+}
+
+#ribbon2 {
+position:absolute;
+background-color:#DC9C98;
+border-right:3px solid #ffffff;
+border-left:5px dashed #E3BBBB;
+height:50%;
+width:2.5%;
+top:50%;
+left:63%;
+}
+
+#holderbox1 {
+position:absolute;
+background-color:#2A7FBD;
+border:3px solid #AFF2F6;
+width:25%;
+height:55%;
+top:22%;
+left:20%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#holderbox1:hover {
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+-webkit-box-shadow: 0px 0px 45px 10px rgba(255,255,255,0.75);
+-moz-box-shadow: 0px 0px 45px 10px rgba(255,255,255,0.75);
+box-shadow: 0px 0px 45px 10px rgba(255,255,255,0.75);
+}
+
+#picbox {
+position:absolute;
+background-color:#ffffff;
+border:1px solid #AFF2F6;
+width:90%;
+height:90%;
+left:5%;
+top:5%;
+background-image: url('https://i.imgur.com/K4AnXGe.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:contain;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#picbox:hover {
+background-image: url('https://i.imgur.com/lNOdvpR.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:contain;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#holderbox2 {
+position:absolute;
+background-color:#2A7FBD;
+border:3px solid #AFF2F6;
+width:35%;
+height:55%;
+top:22%;
+left:47%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#holderbox2:hover {
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+-webkit-box-shadow: 0px 0px 45px 10px rgba(255,255,255,0.75);
+-moz-box-shadow: 0px 0px 45px 10px rgba(255,255,255,0.75);
+box-shadow: 0px 0px 45px 10px rgba(255,255,255,0.75);
+}
+
+#header {
+position:absolute;
+background-color:#AFF2F6;
+border:1px solid #AFF2F6;
+padding:1%;
+width:88%;
+height:5%;
+top:6%;
+left:5%;
+text-align:center;
+font-size:14px;
+color:#B18989;
+font-family: 'Gaegu', cursive;
+letter-spacing:5px;
+text-transform:uppercase;
+}
+
+#content {
+position:absolute;
+background-color:#ffffff;
+border:1px solid #AFF2F6;
+padding:1%;
+overflow:auto;
+width:88%;
+height:76%;
+top:15%;
+left:5%;
+font-size:10px;
+color:#000000;
+font-family: 'Gaegu', cursive;
+}
+
+#title {
+position:absolute;
+height:5%;
+width:35.25%;
+top:15%;
+left:47%;
+text-align:center;
+font-size:30px;
+color:#2A7FBD;
+font-family: 'Neucha', cursive;
+letter-spacing:5px;
+text-transform:uppercase;
+}
+
+#tabbox1 {
+position:absolute;
+background-color:#AFF2F6;
+border:3px solid #2A7FBD;
+border-radius:100%;
+width:4%;
+height:8%;
+top:12%;
+left:20%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox1:hover {
+background-color:#E3BBBB;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+-webkit-box-shadow: 0px 0px 45px 10px rgba(255,255,255,0.75);
+-moz-box-shadow: 0px 0px 45px 10px rgba(255,255,255,0.75);
+box-shadow: 0px 0px 45px 10px rgba(255,255,255,0.75);
+}
+
+#tabbox2 {
+position:absolute;
+background-color:#AFF2F6;
+border:3px solid #2A7FBD;
+border-radius:100%;
+width:4%;
+height:8%;
+top:12%;
+left:27%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox2:hover {
+background-color:#E3BBBB;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+-webkit-box-shadow: 0px 0px 45px 10px rgba(255,255,255,0.75);
+-moz-box-shadow: 0px 0px 45px 10px rgba(255,255,255,0.75);
+box-shadow: 0px 0px 45px 10px rgba(255,255,255,0.75);
+}
+
+#tabbox3 {
+position:absolute;
+background-color:#AFF2F6;
+border:3px solid #2A7FBD;
+border-radius:100%;
+width:4%;
+height:8%;
+top:12%;
+left:34%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+} 
+
+#tabbox3:hover {
+background-color:#E3BBBB;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+-webkit-box-shadow: 0px 0px 45px 10px rgba(255,255,255,0.75);
+-moz-box-shadow: 0px 0px 45px 10px rgba(255,255,255,0.75);
+box-shadow: 0px 0px 45px 10px rgba(255,255,255,0.75);
+}
+
+#tabbox4 {
+position:absolute;
+background-color:#AFF2F6;
+border:3px solid #2A7FBD;
+border-radius:100%;
+width:4%;
+height:8%;
+top:12%;
+left:41%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox4:hover {
+background-color:#E3BBBB;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+-webkit-box-shadow: 0px 0px 45px 10px rgba(255,255,255,0.75);
+-moz-box-shadow: 0px 0px 45px 10px rgba(255,255,255,0.75);
+box-shadow: 0px 0px 45px 10px rgba(255,255,255,0.75);
+}
+
+.tabs {
+display:block;
+width:100%;
+height:100%;
+border-radius:100%;
+text-align:center;
+color:#2A7FBD;
+font-family: 'Neucha', cursive;
+font-size:20px;
+line-height:280%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+.tabs:hover {
+color:#ffffff;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tab1,#tab2,#tab3,#tab4,#tab5,#tab6,#tab7,#tab8 {
+display: none;
+}
+
+a {
+color:#2A7FBD;
+}
+
+i {
+color:#B18989;
+}
+
+b {
+font-size: 10px;
+color:#DC9C98;
+letter-spacing:2px;
+font-family: 'Neucha', cursive;
+}
+</style>
+
+<style type="text/css">* {cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur824.cur), auto !important;}</style>
+<link href="https://fonts.googleapis.com/css?family=Gaegu|Neucha" rel="stylesheet">
+<script>function changeNavigation(id) {document.getElementById('content').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation1(id) {document.getElementById('header').innerHTML=document.getElementById(id).innerHTML}</script>
+
+<div id="ribbon1">
+</div>
+<div id="ribbon2">
+</div>
+
+<div id="tabbox1">
+<span class="tabs" onClick="changeNavigation ('tab1');changeNavigation1 ('tab2')">1</span>
+</div>
+<div id="tabbox2">
+<span class="tabs" onClick="changeNavigation ('tab3');changeNavigation1 ('tab4')">2</span>
+</div>
+<div id="tabbox3">
+<span class="tabs" onClick="changeNavigation ('tab5');changeNavigation1 ('tab6')">3</span>
+</div>
+<div id="tabbox4">
+<span class="tabs" onClick="changeNavigation ('tab7');changeNavigation1 ('tab8')">4</span>
+</div>
+
+<div id="holderbox1">
+<div id="picbox">
+</div>
+</div>
+
+<div id="title">
+The | Ivashkov | Enchantress
+</div>
+
+<div id="holderbox2">
+<div id="header">
+Basic Information
+</div>
+<div id="content">
+<br>
+<br>
+<b>Name:</b> Tanya Ivashkov
+<br><b>Title:</b> The Enchantress
+<br><b>Physical Age:</b> Early Twenties
+<br><b>True Age:</b> 19 years old
+<br><b>Brithdate:</b> January 18
+<br><b>Gender:</b> Female
+<br><b>Sexuality:</b> Demisexual
+<br><b>Species:</b> Human
+<br><b>Nationality:</b> Russian
+<br><b>Talents:</b> First Aid, Cooking
+<br><b>Occupation:</b> Student at <a target="_blank" href="http://ulreich.weebly.com">Ulreich University</a>
+<br><b>Magic Trees:</b> Enchantment
+<br><b>Rank:</b> Paige
+<br><b>Height:</b> 5'6
+<br><b>Weight:</b> 127 lbs.
+<br><b><p align="center">Detailed Information <p align="left>
+<br><br><b>Appearance:</b> A pair of baby blue sapphire gems set into porcelain fair flesh, they make up Tanya's striking gaze. Framing said special jewels are locks of deeper blue hair with a dyed gradient to a lighter, more electric blue which has the outwards appearance of being silky smooth and soft. Her hair is normally allowed to hang down to her hips, surrounding her hourglass shape and is sometimes styled into a high pontail. Tanya has slender, arched eyebrows that end into a fine point towards the ends, just enough distance apart to be equally spaced between her eyes and the bridge of her small and slightly upturned nose with dark blue dyed hairs to match her actual hair. Her lips appear as a rosy shade of pink, full and plush with a slightly bigger upper lip. Her overall facial structure is oval-like, her sharp jawline leading up into high, distinguished cheekbones that give her a more feminine face. She has narrow shoulders and wide hips that contribute to her hourlgass shape, long and slender legs accompanying them. There is one distinct tattoo on her left upper arm in a random shape, somewhat like a jagged snake design.
+<br><br><b>Personality:</b>The Ivashkov girl has very powerful protective instrincts, unable to sit back and see people get hurt and will always try to do something to help wherever possible even if for a total stranger. She is extraordinarily devoted to helping innocent people and protecting those she loves. However, she can be very sarcastic and sharp-tongued at times, always having a smart ass comment whenever someone says something antagonistic to her and always bites back with a witty insult. She doesn't hesitate to speak her mind and can be extremely stubborn in her opinions.
+<br>Despite these things, Tanya remains a social creature. She is normally friendly, warm, not shying away from new people, and she has considerable skill in social interactions. She has a certain charisma that attracts people to her and makes them flock to her, but there is a significant difference in this charm: it isn't due to her overall appearance, simply her witty sense of humor and her sharp brilliance.
+
+</div>
+</div>
+
+<div id="tab1">
+<br>
+
+</div>
+<div id="tab2">
+History
+</div>
+
+<div id="tab3">
+
+<br>
+<br>No items as of this moment.
+</div>
+<div id="tab4">
+Inventory
+</div>
+
+<div id="tab5">
+<br>Mana Manipulation
+<br>The most basic class of magic, involving the direct manipulation of Mana, and is available to all mages. Raw Mana is a mundane source of magic with no special qualities, but offers some level of versatility. The amount of Mana a mage is capable of replenishing or expelling is dependent on their overall level.
+<br>What are Universal Spells?
+<br>Universal spells are spells taught by the teachers of Ulreich University that any mage can learn no matter their tree so long as their current rank is high enough to learn it.
+<br>Personalized Mana
+<br>When mana is being weaved throughout Tanya's body, it takes on the form a medium toned purple flame that coils off from her skin like a fine mist and with no heat, ribbons of light blue intermixing with the purple like an intricate design. This is more prominent when spells like Show of Power are being used, and on its own it isn't too distracting, the colors more transparent than opaque. However, this aura becomes more opaque when more mana is being used, causing large-scale spells to cover her entire body, making her a beacon of purple and blue heat-less flames.
+<br><i>- - - The color purple is generally associated with royalty and symbolizes power, nobility, luxury, and ambition. It conveys wealth and extravagance. Purple is associated with wisdom, dignity, independence, creativity, mystery, and magic.
+<br>- - - Blue is the color of the sky and sea. It is often associated with depth and stability. It symbolizes trust, loyalty, wisdom, confidence, intelligence, faith, truth, and heaven. The color (light) blue is associated with health, healing, tranquility, understanding, and softness.<i/>
+<br><br><b><p align="center">Universal Spells </b><p align="left">
+<br><br><b>Mana Weave</b>
+<br>The simple act of weaving one's own mana pool through their body. Also known as channeling mana.
+<br><br><b>Mana Spark</b>
+A basic mana projectile that can be used offensively or defensively. It causes no real damage other than a small sting when hit directly in the flesh.
+</div>
+<div id="tab6">
+Mana Manipulation and Universal Spells
+</div>
+
+<div id="tab7">
+<br>
+<br><p align="center"><b>Enchantment</b><p align="left"
+The art of magical augmentation. Enchanters are able to infuse objects with their magic, granting the object a either a "Permanent" effect or boon, or a temporary ability which dissipates with time. Permanent enchantments must be recharged with the Enchanter's mana to keep these effects/boons active. As an enchanter increases in power, they not only gain acess to stronger enchantments, but are able to increase their durability and longevity.  Only non-biological/sentient objects may be enchanted.
+<br>
+<br><b>Strong like Bear</b>
+The caster enchants a non-magical item no bigger than can be comfortably be held in one hand to bolster the holder's physical strength by 1.5x and may only be in effect so long as the object remains in physical contact with the caster. Leaving contact will cause the enchantment to cancel instantly and the spell also drains mana continuously until canceled. This enchantment may last for a maximum duration of two posts before automatically dispelling and going on a one post cool down duration.
+<br><br><b>Russian Winds</b>
+<br>When being moved through the air, the enchanted object ( which can not be too big to be held in one hand ) will begin to manipulate the air around itself to build up energy. Once enough energy has been built up over the course of two posts, the object will release an omnidirectional blast of cold wind which not only can knock back an average strength human a few feet, but is cold enough to cause mild chills and make wet objects almost freezing cold. After being enchanted and the item's ability is used, this enchantment fades away and goes on a two post cool down time before being able to be cast again on any object.
+<br><br><b>"Davka" </b>
+<br>A spell that has been affectionately named "Crush" when translated into the common language, this enchantment allows small handheld items to be thrown as projectiles and exponentially gain weight as they go. This allows for a greater punch when being hit, but certainly can not pierce through higher-grade materials than the object itself is. Objects with Davka cast on them gain an additional pound for every one foot they travel, up to a maximum of an extra fifteen pounds by traveling fifteen feet. Once the object leaves this fifteen foot area, the enchantment is instantly dispelled and the object loses all weight gained from being thrown.
+</div>
+<div id="tab8">
+Enchantment Spells
+</div>
